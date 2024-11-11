@@ -31,7 +31,7 @@ const login = (req, res) => {
 };
 
 const signup = async (req, res) => {
-  const username = `${req.body.uesrname}`;
+  const username = `${req.body.username}`;
   const pass = `${req.body.pass}`;
   const pass2 = `${req.body.pass2}`;
 
