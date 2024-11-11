@@ -14,13 +14,13 @@ const makerPage = async (req, res) => {
 };
 
 const makeDomo = async (req, res) => {
-    if(!reg.body.name || !req.body,age) {
+    if(!req.body.name || !req.body.age) {
         return res.status(400).json({ error: 'Both name and age are required!' });
     }
 
     const domoData = {
         name: req.body.name,
-        age: req.body,age,
+        age: req.body.age,
         owner: req.session.account._id,
     };
 
